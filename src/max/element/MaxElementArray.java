@@ -1,4 +1,4 @@
-package Max_Element;
+package max.element;
 
 /**
  * Создать класс MaxElementInArray, содержащий метод, который находит
@@ -19,9 +19,9 @@ public class MaxElementArray {
         this.ints = ints;
     }
 
-    public int getMax(int[] A) {
-        int max = 0;
-        for (int i : A) {
+    public int getMax() {
+        int max = ints[0];
+        for (int i : ints) {
             max = Math.max(max, i);
         }
         return max;
